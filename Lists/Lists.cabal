@@ -1,0 +1,28 @@
+name:                Lists
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/jd95/Lists#readme
+author:              Jeff
+maintainer:          jeffreydwyer95@outlook.com
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:      .
+  exposed-modules:     Problems
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
+test-suite check-answers
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      .
+  main-is:             Tests.hs
+  build-depends:       base
+                     , Lists
+                     , hspec
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
