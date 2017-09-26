@@ -1,13 +1,15 @@
+{-# LANGUAGE ScopedTypeVariables #-}
 module Main where
 
 import Test.Hspec
+import Test.QuickCheck
 
 import Problems
 
 main :: IO ()
 main = hspec $ do
   describe "addition" $ do
-    context "should always" $ do
-      it "work" $
-        (1 + 1) `shouldBe` (2 :: Int)
+    it "problem 1" $
+      property $ \(x :: Bool) ->
+        (problem1 x) == (not x)
 
