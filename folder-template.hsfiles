@@ -1,0 +1,72 @@
+{-# START_FILE {{name}}.cabal #-}
+name:                {{name}}
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/{{github-username}}{{^github-username}}githubuser{{/github-username}}/{{name}}#readme
+author:              {{author-name}}{{^author-name}}Author name here{{/author-name}}
+maintainer:          {{author-email}}{{^author-email}}example@example.com{{/author-email}}
+category:            {{category}}{{^category}}Web{{/category}}
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  hs-source-dirs:      .
+  exposed-modules:     Problems
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+
+test-suite check-answers
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      .
+  main-is:             Tests.hs
+  build-depends:       base
+                     , {{name}}
+                     , hspec
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+{-# START_FILE README.md #-}
+# {{name}} Problem Set
+
+{-# START_FILE Problems.hs #-}
+module Problems where
+
+{-# START_FILE Tests.hs #-}
+module Main where
+
+import Test.Hspec
+
+import Problems
+
+main :: IO ()
+main = hspec $ do
+  describe "addition" $ do
+    context "should always" $ do
+      it "work" $
+        (1 + 1) `shouldBe` (2 :: Int)
+
+{-# START_FILE .gitignore #-}
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
+.stack-work/
+cabal.project.local
+.HTF/
+.ghc.environment.*
+*~

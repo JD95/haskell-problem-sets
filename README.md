@@ -21,4 +21,4 @@ These problem sets are meant to be practice with the various "foundational" conc
 ### Keep in mind
 - The project folders follow a specific template. Follow that template to avoid confusion.
 - Any resources you add to a folder's readme should be specifically related to the folder's concept. Don't simply link to the Haskell book and call it a day.
-- Likewise, if there is a talk or video you want to like to, make sure that it links to the point in the talk which is actually relevant.
+- Likewise, if there is a talk or video you want to link to, make sure that it links to the point in the talk which is actually relevant.
