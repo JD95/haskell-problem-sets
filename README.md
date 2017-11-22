@@ -10,6 +10,18 @@ Each folder contains a small project with a Problems.hs file filled with stub fu
 
 To add problems to a category, simply implement a stub for the function along with a comment describing what is expected. Along with the stub should be a spec in Tests.hs which then validates the problem. 
 
+Here are some online problem sets you could draw on:
+- http://www.codeabbey.com/index/task_list
+- https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions
+- http://codeforces.com/problemset
+- http://codingbat.com/java
+- https://open.kattis.com/
+- https://leetcode.com/problemset/all/
+- http://wcipeg.com/problems
+- http://poj.org/problemlist
+- http://www.spoj.com/problems/classical/
+- http://acm.timus.ru/problemset.aspx?space=1&page=all
+
 ### Keep in mind
 - It would be best if your test did not directly implement the function for the problem so curious eyes can't simply peek at the answer.
 - As much as you can, keep the concepts required to solve the problem limited to the ones covered in that folder. For example, don't require use of intersperse in a Functor problem.
