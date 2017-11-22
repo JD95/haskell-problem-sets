@@ -23,3 +23,8 @@ main = hspec $ do
     it "should multiply two numbers" $
       property $ \(x :: Int, y :: Int) ->
         problem3 x y == (x * y)
+
+  describe "Problem 4" $
+    it "should perform integer division" $
+      property $ \(x :: Int, y :: Int) ->
+        problem4 x y == (x `div` y)

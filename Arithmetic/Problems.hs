@@ -41,3 +41,18 @@ problem2 x y = undefined
 -}
 problem3 :: Int -> Int -> Int
 problem3 x y = undefined
+
+{- |
+
+  Interger Division
+
+  Implement the function to divide the first number by the second to give an interger.
+
+  Example:
+
+  > problem4 6 2 = 3
+  > problem4 15 4 = 3
+
+-}
+problem4 :: Int -> Int -> Int
+problem4 x y = undefined
