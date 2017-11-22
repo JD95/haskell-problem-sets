@@ -56,3 +56,18 @@ problem3 x y = undefined
 -}
 problem4 :: Int -> Int -> Int
 problem4 x y = undefined
+
+{- |
+
+  Modulus
+
+  Implement the function to take the modulus of the first number by the second.
+
+  Example:
+
+  > problem5 6 4 = 2
+  > problem5 9 3 = 0
+
+-}
+problem5 :: Int -> Int -> Int
+problem5 x y = undefined

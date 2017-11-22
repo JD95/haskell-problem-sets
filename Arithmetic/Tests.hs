@@ -28,3 +28,8 @@ main = hspec $ do
     it "should perform integer division" $
       property $ \(x :: Int, y :: Int) ->
         problem4 x y == (x `div` y)
+
+  describe "Problem 5" $
+    it "should perform modulus" $
+      property $ \(x :: Int, y :: Int) ->
+        problem5 x y == (x `mod` y)
