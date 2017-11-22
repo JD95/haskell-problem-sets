@@ -28,3 +28,16 @@ problem1 x y = undefined
 problem2 :: Int -> Int -> Int
 problem2 x y = undefined
 
+{- |
+
+  Multiplication of two numbers
+
+  Implement the function to multiply two given numbers.
+
+  Example:
+
+  > problem3 5 6 = 30
+
+-}
+problem3 :: Int -> Int -> Int
+problem3 x y = undefined
