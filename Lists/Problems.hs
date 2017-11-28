@@ -1,61 +1,121 @@
 module Problems where
 
-{- Problem 1: Find the last element of a list
-   eg. problem1 [1,2,3,4,5]
-       5
+import           Prelude ()
+
+{- |
+
+  Find the last element of a list
+
+  eg. problem1 [1,2,3,4,5]
+      5
 -}
-problem1 :: [a] -> a
-problem1 xs = undefined
+last :: [a] -> a
+last xs = undefined
 
-{- Problem 2: Find the second to last element of a list
-   eg. problem2 [1,2,3,4,5]
-       4
+{- |
+
+  Find the second to last element of a list
+
+  eg. problem2 [1,2,3,4,5]
+      4
 -}
-problem2 :: [a] -> a
-problem2 xs = undefined
+secondLast :: [a] -> a
+secondLast xs = undefined
 
-{- Problem 3: Find the nth element of a list
-   eg. problem3 [1,2,3,4,5] 0
-       1
+{- |
 
-       problem3 [1,2,3,4,5] 4
-       5
+  Find the nth element of a list
 
-       problem3 [1,2,3,4,5] 2
-       3
+  eg. nthElem [1,2,3,4,5] 0
+      1
+
+      nthElem [1,2,3,4,5] 4
+      5
+
+      nthElem [1,2,3,4,5] 2
+      3
 -}
-problem3 :: [a] -> Int -> a
-problem3 xs n = undefined
+nthElem :: [a] -> Int -> a
+nthElem xs n = undefined
 
-{- Problem 4: Find the length of a list
-   eg. problem4 [1,2,3,4]
-       4
+{- |
 
-       problem4 [1]
-       1
+  Find the length of a list
 
-       problem4 []
-       0
+  eg. length [1,2,3,4]
+      4
+
+      length [1]
+      1
+
+      length []
+      0
 -}
-problem4 :: [a] -> Int
-problem4 xs = undefined
+length :: [a] -> Int
+length xs = undefined
 
-{- Problem 5: Reverse a list
-   eg. problem5 [1,2,3]
-       [3,2,1]
+{- |
 
-       problem5 []
-       []
+  Reverse a list
+
+  eg. reverse [1,2,3]
+      [3,2,1]
+
+      reverse []
+      []
 -}
-problem5 :: [a] -> [a]
-problem5 xs = undefined
+reverse :: [a] -> [a]
+reverse xs = undefined
 
-{- Problem 6: Determine if list is a palindrome
-   eg. problem6 [1,2,3]
-       false
+{- |
 
-       problem6 [1,2,3,3,2,1]
-       true
+  Determine if list is a palindrome
+
+  eg. palindrome [1,2,3]
+      false
+
+      palindrome [1,2,3,3,2,1]
+      true
 -}
-problem6 :: Eq a => [a] -> Bool
-problem6 xs = undefined
+palindrome :: Eq a => [a] -> Bool
+palindrome xs = undefined
+
+{- |
+
+  sum
+
+  Add all numerical values in a list
+
+  eg. sum [1,2,3,4]
+      10
+-}
+sum :: Num a => [a] -> a
+sum = undefined
+
+{- |
+
+  zip
+
+  Given two lists, create a new list of pairs
+  with the left value being from the first list
+  and the  second value being from the second list.
+
+  eg. zip [1,2,3,4] ['a', 'b', 'c', 'd']
+      [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+-}
+zip :: [a] -> [b] -> [(a,b)]
+zip = undefined
+
+{- |
+
+  zipWith
+
+  Given a function of two values, and two lists,
+  create a new list which is the result of the function
+  using values from both lists.
+
+  eg. zipWith (+) [1,2,3,4] [1,2,3,4]
+      [2,4,6,8]
+-}
+zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith = undefined
