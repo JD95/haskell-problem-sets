@@ -8,11 +8,11 @@ module Problems where
 
   Example:
 
-  > problem1 5 6 = 11
+  > add 5 6 = 11
 
 -}
-problem1 :: Int -> Int -> Int
-problem1 x y = undefined
+add :: Int -> Int -> Int
+add x y = undefined
 
 {- |
 
@@ -22,11 +22,11 @@ problem1 x y = undefined
 
   Example:
 
-  > problem2 5 6 = -1
+  > subtract 5 6 = -1
 
 -}
-problem2 :: Int -> Int -> Int
-problem2 x y = undefined
+subtract :: Int -> Int -> Int
+subtract x y = undefined
 
 {- |
 
@@ -39,8 +39,8 @@ problem2 x y = undefined
   > problem3 5 6 = 30
 
 -}
-problem3 :: Int -> Int -> Int
-problem3 x y = undefined
+mult :: Int -> Int -> Int
+mult x y = undefined
 
 {- |
 
@@ -50,12 +50,12 @@ problem3 x y = undefined
 
   Example:
 
-  > problem4 6 2 = 3
-  > problem4 15 4 = 3
+  > divison 6 2 = 3
+  > divison 15 4 = 3
 
 -}
-problem4 :: Int -> Int -> Int
-problem4 x y = undefined
+divison :: Int -> Int -> Int
+divison x y = undefined
 
 {- |
 
@@ -65,9 +65,9 @@ problem4 x y = undefined
 
   Example:
 
-  > problem5 6 4 = 2
-  > problem5 9 3 = 0
+  > modulus 6 4 = 2
+  > modulus 9 3 = 0
 
 -}
-problem5 :: Int -> Int -> Int
-problem5 x y = undefined
+modulus :: Int -> Int -> Int
+modulus x y = undefined
