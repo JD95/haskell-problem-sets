@@ -6,6 +6,8 @@ Each folder contains a small project with a Problems.hs file filled with stub fu
 
 > stack test
 
+![progression path](img/progression-path.png)
+
 ## Contributing Problems
 
 To add problems to a category, simply implement a stub for the function along with a comment describing what is expected. Along with the stub should be a spec in Tests.hs which then validates the problem. 
