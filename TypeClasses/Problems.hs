@@ -14,9 +14,11 @@ class Show a where
 class Eq a where
   (==) :: a -> a -> Bool
 
-class Monoid m where
+class Semigroup a where
+  (<>) :: a -> a -> a
+
+class Semigroup m => Monoid m where
   mempty :: m
-  mappend :: m -> m -> m
 
 class Functor f where
   fmap :: (a -> b) -> f a -> f b
@@ -29,7 +31,7 @@ class Applicative f => Alternative f where
   empty :: f a
   (<|>) :: f a -> f a -> f a
 
-class Functor m => Monad m where
+class Applicative m => Monad m where
 
   (>>=) :: m a -> (a -> m b) -> m b
   ma >>= f = join (fmap f ma)
