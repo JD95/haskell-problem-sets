@@ -54,8 +54,8 @@ mult x y = undefined
   > divison 15 4 = 3
 
 -}
-divison :: Int -> Int -> Int
-divison x y = undefined
+division :: Int -> Int -> Int
+division x y = undefined
 
 {- |
 
