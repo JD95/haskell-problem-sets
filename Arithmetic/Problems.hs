@@ -36,7 +36,7 @@ subtract x y = undefined
 
   Example:
 
-  > problem3 5 6 = 30
+  > mult 5 6 = 30
 
 -}
 mult :: Int -> Int -> Int
@@ -44,14 +44,15 @@ mult x y = undefined
 
 {- |
 
-  Interger Division
+  Integer Division
 
-  Implement the function to divide the first number by the second to give an interger.
+  Implement the function to divide the first number by the second to
+  give an integer.
 
   Example:
 
-  > divison 6 2 = 3
-  > divison 15 4 = 3
+  > division 6 2 = 3
+  > division 15 4 = 3
 
 -}
 division :: Int -> Int -> Int
