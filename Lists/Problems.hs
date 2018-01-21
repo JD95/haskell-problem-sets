@@ -1,7 +1,5 @@
 module Problems where
 
-import           Prelude ()
-
 {- |
 
   Find the last element of a list
@@ -9,8 +7,8 @@ import           Prelude ()
   eg. problem1 [1,2,3,4,5]
       5
 -}
-last :: [a] -> a
-last xs = undefined
+last' :: [a] -> a
+last' xs = undefined
 
 {- |
 
@@ -19,8 +17,8 @@ last xs = undefined
   eg. problem2 [1,2,3,4,5]
       4
 -}
-secondLast :: [a] -> a
-secondLast xs = undefined
+secondLast' :: [a] -> a
+secondLast' xs = undefined
 
 {- |
 
@@ -51,8 +49,8 @@ nthElem xs n = undefined
       length []
       0
 -}
-length :: [a] -> Int
-length xs = undefined
+length' :: [a] -> Int
+length' xs = undefined
 
 {- |
 
@@ -64,8 +62,8 @@ length xs = undefined
       reverse []
       []
 -}
-reverse :: [a] -> [a]
-reverse xs = undefined
+reverse' :: [a] -> [a]
+reverse' xs = undefined
 
 {- |
 
@@ -89,8 +87,8 @@ palindrome xs = undefined
   eg. sum [1,2,3,4]
       10
 -}
-sum :: Num a => [a] -> a
-sum = undefined
+sum' :: Num a => [a] -> a
+sum' = undefined
 
 {- |
 
@@ -103,8 +101,8 @@ sum = undefined
   eg. zip [1,2,3,4] ['a', 'b', 'c', 'd']
       [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
 -}
-zip :: [a] -> [b] -> [(a,b)]
-zip = undefined
+zip' :: [a] -> [b] -> [(a,b)]
+zip' = undefined
 
 {- |
 
@@ -117,5 +115,5 @@ zip = undefined
   eg. zipWith (+) [1,2,3,4] [1,2,3,4]
       [2,4,6,8]
 -}
-zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
-zipWith = undefined
+zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith' = undefined
